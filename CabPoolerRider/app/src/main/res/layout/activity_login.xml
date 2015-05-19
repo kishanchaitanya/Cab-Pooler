@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kishanchaitanya.cabpooler.login">
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginLogo"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="100dp"
+        android:gravity="center"/>
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:id="@+id/userID"
+        android:layout_below="@+id/loginLogo"
+        android:layout_centerHorizontal="true"
+        android:hint="User ID"
+        android:gravity="center"/>
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/password"
+        android:layout_below="@+id/userID"
+        android:layout_centerHorizontal="true"
+        android:hint="Password"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#0040FF"
+        android:textColor="#FFFFFF"
+        android:onClick="onLoginBtn"/>
+
+</RelativeLayout>

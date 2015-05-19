@@ -1,0 +1,162 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.kishanchaitanya.cabpooler.MainActivity"
+        android:id="@+id/main"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+        <fragment
+            android:id="@+id/homeMapView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_below="@+id/app_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/driverInfo"
+            android:layout_below="@+id/app_bar">
+
+            <com.pkmmte.view.CircularImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/harshad"
+                android:id="@+id/driverImage"
+                android:paddingTop="15dp"
+                app:border="true"
+                app:border_color="#EEEEEE"
+                app:border_width="4dp"
+                app:shadow="true"
+
+                android:background="#FFFFFF"/>
+
+            <LinearLayout
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/driverImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:background="#FFFFFF">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cab Driver - Harshad"
+                    android:gravity="right"
+                    android:textColor="@android:color/black"
+                    style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Interest Match - Hindi,Traveling"
+                    android:gravity="right"
+                    android:textColor="@android:color/black"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:gravity="bottom"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Source"
+                android:background="#FFFFFF"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:hint="My Location"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/Destination"
+                android:hint="Destination"
+                android:background="#FFFFFF"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                />
+            <requestFocus></requestFocus>
+
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Request Ride"
+                android:id="@+id/Go"
+                android:gravity="center"
+                android:background="#0040FF"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="10dp"
+               />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/RideStatus"
+                    android:background="#FFFFFF"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:gravity="center" />
+
+        </LinearLayout>
+
+        </fragment>
+
+
+
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    
+    <fragment
+        android:id="@+id/fragment_navigation_drawer"
+        android:layout_width="@dimen/navDrawerWidth"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:layout="@layout/fragment_navigation_drawer"
+        android:name="com.example.kishanchaitanya.cabpooler.NavigationDrawerFragment"
+        tools:layout="@layout/fragment_navigation_drawer" />
+
+
+
+
+</android.support.v4.widget.DrawerLayout>
+
+

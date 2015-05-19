@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/textColor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.pkmmte.view.CircularImageView
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:src="@drawable/harshad"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/profileImage"
+        app:border="true"
+        app:border_color="#EEEEEE"
+        app:border_width="4dp"
+        app:shadow="true" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hi"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            style="@style/Base.TextAppearance.AppCompat.Large"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harshad"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/accentColor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="harshad@gmail.com"
+            android:gravity="right"
+            android:textColor="@android:color/black"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

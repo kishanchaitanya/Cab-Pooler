@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kishanchaitanya.cabpooler.free_Rides">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+    <ImageView
+        android:src="@drawable/free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView3"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:text="Give friends $20 towards a ride. After they ride you get $20 credit too" android:layout_width="wrap_content"
+        android:id="@+id/freeInfo"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center" />
+
+    <TextView
+        android:text="Share promo code CABPOOLER3124"
+        android:layout_width="wrap_content"
+        android:id="@+id/freeInfo2"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/freeInfo"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/freeInfo2"
+        android:layout_marginTop="15dp">
+
+        <ImageView
+            android:src="@drawable/facebook"
+            android:layout_width="96dp"
+            android:clickable="true"
+            android:layout_height="96dp"
+            android:id="@+id/facebookLogo"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:src="@drawable/twitter"
+            android:layout_width="96dp"
+            android:clickable="true"
+            android:layout_height="96dp"
+            android:id="@+id/twitterLogo"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CabPooler</string>
+    <string name="title_activity_main">CabPooler</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="next">next</string>
+    <string name="title_activity_sub">Help</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_free__rides">Free Rides</string>
+    <string name="title_activity_payment">Payment</string>
+    <string name="title_activity_setting">Setting</string>
+
+    <string-array name="help_menu">
+        <item>669-222-9001</item>
+        <item>669-222-9002</item>
+        <item>669-222-9003</item>
+        <item>669-222-9004</item>
+    </string-array>
+    <string name="title_activity_my_dialog">Help Number</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_splash">splash</string>
+</resources>

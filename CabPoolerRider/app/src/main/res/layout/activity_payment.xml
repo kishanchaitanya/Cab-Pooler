@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kishanchaitanya.cabpooler.payment">
+
+    <include android:id="@+id/app_bar" layout="@layout/app_bar"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/paymentAmount"
+        android:layout_below="@+id/app_bar"
+        android:layout_centerHorizontal="true"
+        android:hint="Travel Payment"
+        android:gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:id="@+id/numberOf"
+        android:layout_below="@+id/paymentAmount"
+        android:layout_centerHorizontal="true"
+        android:hint="Number of people"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        android:id="@+id/button2"
+        android:layout_below="@+id/numberOf"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:onClick="onSplitBtn"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter above fields to know Split amount"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="35dp"/>
+
+
+
+
+</RelativeLayout>

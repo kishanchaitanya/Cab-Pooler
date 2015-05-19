@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rookies.driver.cabpooler" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <meta-data android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBHBQkWnwirdWGeu0CzLeiqJNJkR43Lato">
+
+        </meta-data>
+        <activity
+            android:name="com.rookies.driver.cabpooler.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.SubActivity"
+            android:label="@string/title_activity_sub" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.rookies.driver.cabpooler.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.free_Rides"
+            android:label="@string/title_activity_free__rides" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.payment"
+            android:label="@string/title_activity_payment" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.setting"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.MyDialog"
+            android:label="@string/title_activity_my_dialog"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name="com.rookies.driver.cabpooler.splash"
+            android:label="CabPooler-Driver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:enabled="true" android:name="com.rookies.driver.cabpooler.background.UserPollingService" />
+
+    </application>
+
+</manifest>
